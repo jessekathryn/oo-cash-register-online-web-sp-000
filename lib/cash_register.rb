@@ -16,6 +16,7 @@ def add_item(product, price, quantity = 1)
  self.items << product 
  end
  self.total = total + price*quantity
+ self.last_amount = price*quantity
  end
 
 def apply_discount
