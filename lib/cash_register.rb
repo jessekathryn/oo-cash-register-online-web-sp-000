@@ -8,7 +8,7 @@ def initialize(discount = 0)
   self.total = 0
   self.discount = discount
   self.items = []
-  self.last_amount = items.last
+  self.last_amount = 0
  end
 
 def add_item(product, price, quantity = 1)
@@ -29,6 +29,7 @@ end
 
 def void_last_transaction
    binding.pry
+  self.last_amount = items.last
   self.total = total - last_amount 
 end
 end
