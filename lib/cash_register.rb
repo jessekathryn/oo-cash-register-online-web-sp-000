@@ -29,7 +29,6 @@ end
 end
 
 def void_last_transaction
-  self.last_amount = items.last
   self.total = total - last_amount 
 end
 end
