@@ -28,8 +28,8 @@ end
 end
 
 def void_last_transaction
+   binding.pry
   self.total = total - last_amount 
-  binding.pry
 end
 end
 
