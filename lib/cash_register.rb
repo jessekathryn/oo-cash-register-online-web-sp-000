@@ -21,10 +21,10 @@ class CashRegister
 
   def apply_discount
     if discount.to_i == 0 
-    "There is no discount to apply."
+      "There is no discount to apply."
     elsif 
-    self.total = total - discount.to_i*10
-    "After the discount, the total comes to $#{total}."
+      self.total = total - discount.to_i*10
+      "After the discount, the total comes to $#{total}."
     end
   end
 
